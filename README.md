@@ -39,4 +39,4 @@ r2_score(y_test, y_pred)
 ___
 ## Final Evaluation
 ### Spread of actual and predicted values for test data
-![Prediction spread.png]
+![Prediction spread](Prediction spread.png)
