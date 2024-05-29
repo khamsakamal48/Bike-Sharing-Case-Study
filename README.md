@@ -42,3 +42,61 @@ ___
 ![Prediction spread](Prediction_spread.png)
 
 ### Fit on the Test dataset
+![](Actual_vs_Predictions.png)
+
+### Regression Plot
+![](Regression_Plot.png)
+
+### Errors
+![](Error_Terms.png)
+
+### R-Squared and Adjusted R-Squared Values (Test data)
+$$R^2 = 0.818$$
+$$\bar{R}^2 = 0.790$$
+
+### Final Model Equation
+$$cnt = 0.2678 + (yr \times 0.2349) + (temp \times 0.4287) - (windspeed \times 0.1425) - (weathersit_{Light snow/rain} \times 0.2884) - 
+(weathersit_{Misty} \times 0.0798) - (season_{Spring} \times 0.1196) + (season_{Winter} \times 0.0652) - (mnth_{7} \times 0.0689) + (mnth_{9} \times 0.0486) - (mnth_{11} \times 0.0507) - (mnth_{12} \times 0.0396)$$
+
+### Variables
+| **Variable**                     | **Description**                                                                         | **co-efficient** |
+|----------------------------------|-----------------------------------------------------------------------------------------|:----------------:|
+| **_cnt_**                        | Total Rentals                                                                           |        -         |
+| **_yr_**                         | Year                                                                                    |      0.2349      |
+| **_temp_**                       | Temperature in Degree Celsius                                                           |      0.4287      |
+| **_windspeed_**                  | Windspeed                                                                               |     -0.1425      |
+| **_weathersit_Light snow/rain_** | Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds |     -0.2884      |
+| **_weathersit_Misty_**           | Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist                            |     -0.0798      |
+| **_season_Spring_**              | Spring season                                                                           |     -0.1196      |
+| **_season_Winter_**              | Winter season                                                                           |      0.0652      |
+| **_mnth_7_**                     | July                                                                                    |     -0.0689      |
+| **_mnth_9_**                     | September                                                                               |      0.0486      |
+| **_mnth_11_**                    | November                                                                                |     -0.0507      |
+| **_mnth_12_**                    | December    
+
+
+### Interpretation
+
+A constant value of `0.2678` indicates that even if all the other predictor values are 0, the Total rentals would increase by `0.2678` units.
+
+As per our final model (Model 15), the top 3 predictor variables that influences the bike bookings are:
+
+- **Temperature _(temp)_**: A coefficient value of `0.4287` indicated that a unit increase in temp variable increases the bike rental numbers by `0.4287` units.
+- **Weather with Light Snow/Rain _(weathersit_Light snow/rain)_**: A coefficient value of `-0.2884` indicates that a unit increase in weathersit_Light snow/rain variable decreases the bike hire numbers by `0.2884` units.
+- **Year _(yr)_**: A coefficient value of `0.2349` indicates that a unit increase in yr variable increases the bike hire numbers by `0.2349` units.
+
+So, it's recommended to consider these variables to achieve maximum Booking when the situation comes back to normal.
+
+The next best features that can also be considered are,
+
+- **Wind Speed _(windspeed)_**: A coefficient value of `-0.1425` indicates that a unit increase in windspeed variable decreases the bike rental numbers by `-0.1425` units.
+- **Spring Season _(season_Spring)_**: - A coefficient value of `-0.1196` indicated that, a unit increase in season_Spring variable decreases the bike hire numbers by `0.1196` units.
+- **Mist + Cloudy weather _(weathersit_Misty)_**: - A coefficient value of `-0.0798` indicated that, a unit increase in weathersit_Misty variable decreases the bike hire numbers by `0.0798` units.
+- **Winter _(season_Winter)_**: - A coefficient value of `0.0652` indicated that, a unit increase in season_Spring variable increases the bike hire numbers by `0.0652` units.
+- **Months**: July, September, November and December
+
+## Conclusion
+### What this means for the business?
+- Focus on bike availability during sunny, warm weather.
+- Consider adjustments during light snow/rain periods (promotions, staffing, etc.).
+- Track year-on-year growth and plan accordingly.
