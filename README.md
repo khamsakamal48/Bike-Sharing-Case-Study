@@ -54,6 +54,7 @@ ___
 $$R^2 = 0.818$$
 $$\bar{R}^2 = 0.790$$
 
+
 ## Model Equation
 $$cnt = 0.2678 + (yr \times 0.2349) + (temp \times 0.4287) - (windspeed \times 0.1425) - (weathersit_{Light snow/rain} \times 0.2884) - 
 (weathersit_{Misty} \times 0.0798) - (season_{Spring} \times 0.1196) + (season_{Winter} \times 0.0652) - (mnth_{7} \times 0.0689) + (mnth_{9} \times 0.0486) - (mnth_{11} \times 0.0507) - (mnth_{12} \times 0.0396)$$
