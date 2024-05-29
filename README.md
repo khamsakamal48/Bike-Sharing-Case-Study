@@ -1,5 +1,5 @@
 # Bike Sharing Case Study
-Build a model for the predication of bike rental daily count based on the environmental and seasonal settings.
+Build a model for the prediction of bike rental daily count based on the environmental and seasonal settings.
 
 This assignment is a programming assignment wherein you have to build a multiple linear regression model for the prediction of demand for shared bikes. You will need to submit a Jupyter notebook for the same. 
 
